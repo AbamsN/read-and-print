@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>ini surat sktm</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script src="readprint.js"></script>
+        <style>
+            #nomer_surat{
+                text-align:center;
+            }
+            .nama_surat{
+                text-transform:uppercase;
+                text-decoration:underline;
+                font-weight:bolder;	
+            }
+
+            #surat div{
+                margin:4px;	
+            }
+
+            .content_surat div{
+                position:relative;
+                padding:1px;
+                }	
+
+            .isian_surat{
+                position:absolute;
+                left:170px;
+                width:auto;
+            }	
+
+        </style>
+    </head>
+    <body>
+        <ul >
+            <div id="logo_surat">logo </div>
+            <div id="nomer_surat">
+            <div class="nama_surat">Surat Keterangan Tidak Mampu</div>
+            <div>Nomor : </div>
+            </div>
+            <div id="surat_pembuka">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yang bertanda tangan dibawah ini , 
+            Kepala Desa , 
+            Kecamatan, Kabupaten menerangkan dengan 
+            sebenarnya bahwa orang tersebut dibawah ini :
+            </div>
+            <div class="content_surat">
+
+            <div>
+                <label>Nama
+                </label>
+                <label id="namaSktm" class="isian_surat"></label></div>
+            <div>
+                <label>Tempat lahir 
+                </label>
+                <span id="ttlSktm" class="isian_surat"></span></div>
+            <div>
+                <label>Tanggal lahir
+                </label>
+                <label id="tglSktm" class="isian_surat"></label></div>
+            <div>
+                <label>Alamat
+                </label>
+                <label id="alamatSktm" class="isian_surat"></label></div>
+            
+            </div>
+            <div id="surat_penutup">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demikian Surat Keterangan ini diberikan, untuk 
+            dapat digunakan sebagaimana mestinya.</div>
+            <div id="tanda_tangannya">ttd disini</div>
+        </ul>
+    </body>
+</html>
+    
+
